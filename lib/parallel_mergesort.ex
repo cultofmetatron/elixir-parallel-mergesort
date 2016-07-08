@@ -64,7 +64,7 @@ defmodule ParallelMergesort do
      send(parent_id, {self, sorted})
   end
 
-  def parrallel_sort(list) do
+  def parallel_sort(list) do
     pid = spawn_link(ParallelMergesort, :psort, [self, list])
     receive do
       {^pid, sorted} ->

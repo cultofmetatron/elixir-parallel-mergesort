@@ -21,7 +21,7 @@ defmodule ParallelMergesortTest do
   end
 
   test "it sorts the list in parralel" do
-    assert ParallelMergesort.parrallel_sort([1, 3, 2, 6, 3, 4]) == [1, 2, 3, 3, 4, 6]
+    assert ParallelMergesort.parallel_sort([1, 3, 2, 6, 3, 4]) == [1, 2, 3, 3, 4, 6]
   end
 
 
